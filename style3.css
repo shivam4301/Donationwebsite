@@ -1,0 +1,231 @@
+/* Reset some basic elements */
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Tahoma, sans-serif;
+  line-height: 1.8em;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: linear-gradient(to top, rgb(13, 97, 13), rgb(19, 23, 22));
+}
+
+header .logo {
+  color: #fff;
+  font-size: 32px;
+}
+
+header .logo img {
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  font-size: 28px;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(to right, green, rgb(62, 206, 206));
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #004d00;
+}
+
+/* Main Content (About) */
+.about {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.background-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  font-weight: bold;
+  opacity: 0.5;
+  color: #ffcc00;
+  transition: opacity 0.3s;
+}
+
+.background-text:hover {
+  opacity: 1;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 50px 10%;
+  background-color: wheat;
+}
+
+.testimonials h2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+.testimonial {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.testimonial p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.testimonial p:last-child {
+  font-style: italic;
+  color: #777;
+}
+
+footer {
+  background: #003322;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 0;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer img {
+  margin-right: 20px;
+}
+
+/* Solar Installations Section */
+.solar-gallery {
+  padding: 50px 10%;
+  background-color: #f9f9f9;
+}
+
+.solar-gallery h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.solar-images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.solar-images img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s, height 0.3s;
+}
+
+.solar-images img:hover {
+  transform: scale(1.05);
+}
+
+.solar-gallery p {
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+.team-members {
+  padding: 50px 10%;
+  background-color: rgb(138, 125, 109);
+  text-align: center;
+}
+
+.team-members h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: orange;
+}
+
+.team-members ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-members li {
+  font-size: 1.2em;
+  margin: 0 20px 20px 20px;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.team-members li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
